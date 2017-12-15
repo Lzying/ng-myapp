@@ -1,0 +1,41 @@
+<div style="background-color: rgb(236, 233, 233);">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <div class="list-group-item active">学生信息查询</div>
+                <div class="list-group-item mypoi" (click)="isShow = !isShow">学生管理</div>
+                <div class="list-group-item " [style.display]="isShow ? 'block' : 'none'">
+                    <div class="userinformation mypoi">学院
+                        <div>
+                            <select>
+                                <option value="volvo">金融学院</option>
+                                <option value="saab">计算机学院</option>
+                                <option value="opel">化工学院</option>
+                                <option value="audi">信息学院</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="userinformation mypoi">班级
+                        <div>
+                            <select>
+                                <option value="volvo">1班</option>
+                                <option value="saab">2班</option>
+                                <option value="opel">3班</option>
+                                <option value="audi">4班</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item mypoi">添加学生</div>
+                <div class="list-group-item mypoi" style="font-size: 13px;">批量添加</div>
+                <div class="list-group-item userlist"></div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div>
+                <p>hhhhhhhhhh</p>
+            </div>
+        </div>
+
+    </div>
+</div>

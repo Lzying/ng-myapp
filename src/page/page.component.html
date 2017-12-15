@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mynav">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <button class="navbar-toggler" (click)="isShow = !isShow">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" [style.display]="isShow ? 'block' : 'none'">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/page/onepage">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/page/user">用户管理</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/page/student">学生系统</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"id="dropdown01" (click)="thisShow = !thisShow" style="cursor:pointer;">友情链接</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01" [style.display]="thisShow ? 'block' : 'none'">
+                    <a class="dropdown-item" href="http://www.baidu.com" target="_blank">学校网站</a>
+                    <a class="dropdown-item" href="http://www.bootcss.com/" target="_blank">一卡通网页</a>
+                    <a class="dropdown-item" href="https://github.com/angular/angular-cli" target="_blank">教务系统</a>
+                </div>
+            </li>
+            
+            <li class="nav-item ">
+                    <a class="nav-link" routerLink='/login'>登录</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0">搜索</button>
+        </form>
+    </div>
+</nav>
+<div class="page"><router-outlet></router-outlet></div>
+

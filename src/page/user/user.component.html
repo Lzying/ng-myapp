@@ -1,0 +1,22 @@
+<div  style="background-color: rgb(236, 233, 233);">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <div class="list-group-item active">当前用户：</div>
+                <div class="list-group-item mypoi" (click)="isShow = !isShow">信息管理</div>
+                <div class="list-group-item " [style.display]="isShow ? 'block' : 'none'">
+                    <div class="userinformation mypoi">修改密码</div>
+                    <div class="userinformation mypoi">修改信息</div>
+                </div>
+                <div class="list-group-item mypoi">其他设置</div>
+                <div class="list-group-item userlist"></div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div>
+                <p>hhhhhhhhhh</p>
+            </div>
+        </div>
+
+    </div>
+</div>
